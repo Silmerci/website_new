@@ -1,0 +1,238 @@
+html, body, html > body {
+  height: 100%;
+  min-height: 100%;
+}
+
+.container {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+body {
+  background: #000000;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+	font-family:"big_noodle_tilting";
+			src: url("../fonts/Lovelo_Line_Bold.eot?") format("eot"),
+				url("../fonts/Lovelo_Line_Bold.woff") format("woff"),
+				url("../fonts/big_noodle_tilting.ttf") format("truetype"),
+				url("../fonts/Lovelo_Line_Bold.svg#Lovelo-LineBold") format("svg");
+				font-weight:normal;
+				font-style:normal;
+			}
+
+#dwnload p {
+  font-family: 'big_noodle_tilting';
+  font-size: 72px;
+  font-weight: 600;
+  text-align: center;
+  color: #FF0000;
+}
+
+p {
+	font-family: 'big_noodle_tilting';
+	font-size: 72px;
+  font-weight: 600;
+	text-align: center;
+  color: #FF0000;
+}
+
+/* Header */
+.header {
+  position: relative;
+}
+
+/* Menu */
+#menu {
+  width: 400px;
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  left: 0;
+}
+
+#nav_drop {
+  background-color: transparent;
+  border: 1px;
+  padding: 12px 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #000000;
+  font-family: sans-serif;
+}
+
+#menu .sub-menu {
+  display: none;
+}
+
+#menu:hover .sub-menu {
+  display: block;
+}
+
+ul#menu li a, ul#menu li ul.sub-menu li a  {
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 10px;
+  line-height: -1.2;
+  display: inline-block;
+  background-color: transparent;
+}
+
+#menu li a:hover,
+#menu ul.sub-menu li a:hover {
+  background-color: red;
+}
+
+/* Logo */
+#trag3 {
+  padding-top: 16px;
+  width: 400px;
+  margin: auto;
+}
+
+.trag3 {
+  position: relative;
+  z-index: 0;
+}
+.logo_box {
+  height:auto;
+}
+.logo_box .logo img {
+  display: block;
+  width: 80px; height: 80px;
+  margin: auto;
+}
+#trag3p1 {
+  margin-top: 16px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 42px;
+}
+
+/* Social */
+#connect {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+#social {
+  padding-top: 20px;
+}
+
+#social li {
+  display: inline;
+  padding: 0 7px;
+}
+
+
+/* Players */
+.youtube {
+  max-width: 640px;
+  width: 100%;
+  margin: auto;
+}
+
+.youtube {
+  position: relative;
+  height: 360px;
+}
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*Download*/
+#dwnload p {
+  font-size: 20px;
+  color: red;
+  text-decoration: none;
+}
+.soundcloud {
+  max-width: 640px;
+  width: 640px;
+  margin: 20px auto;
+  height: 640px;
+  display: none;
+}
+
+/* Footer */
+.footer {
+  font-size: 11px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Media queries */
+@media only screen and (min-device-width : 320px) and (max-device-width : 667px) {
+  
+  .soundcloud {
+    display: block;
+  }
+
+  #scloud_act iframe {
+    width: 300px;
+    height: 400px;
+  }
+
+  #trag3 {
+    padding-top: 50px;
+  }
+
+  .logo_box {
+    width: 320px;
+  }
+  
+  .youtube {
+    height: 300px;
+    margin-top: -10px;
+  }
+}
+
+ @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  .soundcloud {
+    display: block;
+  }
+
+  #scloud_act iframe {
+    width: 300px;
+    height: 400px;
+  }
+
+  #trag3 {
+    padding-top: 50px;
+  }
+
+  .logo_box {
+    width: 320px;
+  }
+  
+  .youtube {
+    height: 300px;
+    margin-top: -10px;
+  }
+ }
