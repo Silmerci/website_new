@@ -1,9 +1,15 @@
 body {
-  margin: 50px 0 0;
+  margin: 80px 0 0;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 img {
   max-width: 100%;
+}
+
+p {
+
 }
 
 #logo {
@@ -33,7 +39,7 @@ img {
 }
 .carousel-container {
   margin-bottom: 50px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 
 .carousel-caption h1 span {
@@ -110,7 +116,35 @@ img {
     margin-top: 0;
   }
   #soundcloud-player {
-    height: 600px;
+    height: 400px;
+  }
+
+.pagination {
+  display: block;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+  padding-top: 20px;
+}
+  .pagination ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  .pagination ul li.prev {
+    float: left;
+  }
+    .pagination ul li.prev i {
+      margin-right: 10px;
+    }
+  .pagination ul li.next {
+    float: right;
+  }
+    .pagination ul li.next i {
+      margin-left: 10px;
+    }
+  .pagination ul li a {
+    text-decoration: none;
   }
 
 #footer {
@@ -123,3 +157,24 @@ img {
   #footer p {
     margin: 0;
   }
+
+
+/*
+ * Single Post
+ */
+
+.single .post-block .asset {
+  margin-bottom: 30px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  body {
+    margin-top: 120px;
+  }
+
+  .single .post-block aside {
+    margin: 40px 0;
+  }
+}
